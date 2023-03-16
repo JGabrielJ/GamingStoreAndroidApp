@@ -8,6 +8,8 @@ import com.acxdev.commonFunction.adapter.PageAdapter
 import com.acxdev.commonFunction.util.FunctionX.Companion.putExtra
 import com.acxdev.prototypegaming.ui.fragment.FragmentOnBoarding
 import com.acxdev.prototypegaming.databinding.ActivityOnBoardingBinding
+import com.acxdev.prototypegaming.ui.fragment.FragmentOnBoarding1
+import com.acxdev.prototypegaming.ui.fragment.FragmentOnBoarding2
 
 class ActivityOnBoarding : AppCompatActivity() {
     private lateinit var binding: ActivityOnBoardingBinding
@@ -16,7 +18,7 @@ class ActivityOnBoarding : AppCompatActivity() {
         binding = ActivityOnBoardingBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val page = PageAdapter(supportFragmentManager)
-        page.adds(FragmentOnBoarding().putExtra("1"), FragmentOnBoarding().putExtra("2"), FragmentOnBoarding().putExtra("3"))
+        page.adds(FragmentOnBoarding(), FragmentOnBoarding1(), FragmentOnBoarding2())
         binding.viewPager.adapter = page
         binding.dotsIndicator.setViewPager(binding.viewPager)
         var current = 0
