@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_30dp"
         android:gravity="center_horizontal"
-        android:text="...ou simplesmente escolha jogar sozinho e buscar obter cada vez mais conquistas"
+        android:text="...ou escolha jogar sozinho e obter cada vez mais recompensas"
         android:textColor="@color/textSecondary" />
 
 </RelativeLayout>
