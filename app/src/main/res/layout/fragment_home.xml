@@ -29,7 +29,7 @@
                     android:id="@+id/photo"
                     android:layout_width="@dimen/photo_size"
                     android:layout_height="@dimen/photo_size"
-                    android:src="@drawable/ic_john" />
+                    android:src="@drawable/ic_alisson" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
