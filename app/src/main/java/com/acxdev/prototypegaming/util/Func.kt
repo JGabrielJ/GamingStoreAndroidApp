@@ -7,8 +7,8 @@ import java.util.*
 class Func {
     companion object{
         fun Any?.toIDR(): String{
-            val format = DecimalFormat("###,###,###,###,##0.##", DecimalFormatSymbols.getInstance(Locale("id", "ID")))
-            return "Rp${format.format(toString().toBigDecimal())}"
+            val format = DecimalFormat("###,###,###,###,##0.##", DecimalFormatSymbols.getInstance(Locale("pt", "BR")))
+            return "R$${format.format(toString().toBigDecimal())}"
         }
     }
 }
