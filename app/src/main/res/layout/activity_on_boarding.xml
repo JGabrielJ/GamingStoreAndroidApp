@@ -52,7 +52,7 @@
         android:layout_marginStart="@dimen/margin_30dp"
         android:layout_marginEnd="@dimen/margin_30dp"
         android:layout_marginBottom="@dimen/margin_30dp"
-        android:text="Get Started"
+        android:text="Avançar →"
         android:textColor="@color/white"
         android:textSize="@dimen/text_large" />
 </RelativeLayout>

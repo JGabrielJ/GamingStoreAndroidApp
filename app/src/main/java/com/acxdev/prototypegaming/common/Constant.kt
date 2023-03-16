@@ -48,7 +48,7 @@ class Constant {
             val popular = mutableListOf<Game>()
             popular.add(Game(R.string.genshinImpact, R.string.rpg, null, R.string.descGenshin, R.drawable.ic_genshin,null, imageListGenshin))
             popular.add(Game(R.string.revillage, R.string.survivalHorror, null, R.string.descRe, R.drawable.ic_re,179.99, imageListRe))
-            popular.add(Game(R.string.gtav, R.string.actionAdventure, null, R.string.descGta, R.drawable.ic_gta,82.00, imageListGta))
+            popular.add(Game(R.string.gtav, R.string.actionAdventure, null, R.string.descGta, R.drawable.ic_gta,89.99, imageListGta))
             return popular
         }
 

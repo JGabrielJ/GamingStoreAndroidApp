@@ -45,14 +45,14 @@
                         android:id="@+id/skill"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Expert"
+                        android:text="Giga Chad"
                         android:textColor="@color/textSecondary" />
 
                     <TextView
                         android:id="@+id/name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="John Cena"
+                        android:text="Alisson Gomes Linhares"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
                 </LinearLayout>

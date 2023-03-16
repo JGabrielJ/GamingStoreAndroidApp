@@ -19,7 +19,7 @@ class FragmentOnBoarding1 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val string = "<font color=#FFFFFF>Batalhe por cada</font> <font color=#6E2CC9>Conquista</font>"
+        val string = "<font color=#FFFFFF>Batalhe por cada uma das</font> <font color=#6E2CC9>Conquistas Disponíveis</font>"
         binding.title.html(string)
     }
 }
