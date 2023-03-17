@@ -13,6 +13,7 @@ import com.acxdev.prototypegaming.ui.fragment.FragmentBlank
 import com.acxdev.prototypegaming.ui.fragment.FragmentHome
 import com.acxdev.prototypegaming.R
 import com.acxdev.prototypegaming.databinding.ActivityMainBinding
+import com.acxdev.prototypegaming.ui.fragment.FragmentChat
 import com.google.android.material.behavior.HideBottomViewOnScrollBehavior
 
 class ActivityMain : AppCompatActivity() {
@@ -23,7 +24,7 @@ class ActivityMain : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val pager = PageAdapter(supportFragmentManager)
-        pager.adds(FragmentHome(), FragmentBlank(), FragmentBlank(), FragmentBlank())
+        pager.adds(FragmentHome(), FragmentChat(), FragmentBlank(), FragmentBlank())
         binding.viewPager.adapter = pager
         binding.viewPager.offscreenPageLimit = 4
         binding.viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {

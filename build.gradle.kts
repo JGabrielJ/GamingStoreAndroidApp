@@ -7,7 +7,7 @@ buildscript {
         classpath(Config.Dependencies.androidPlugin)
         classpath(Config.Dependencies.kotlinPlugin)
         classpath(Config.Dependencies.googlePlugin)
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.0")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.20-RC")
     }
 }
 
