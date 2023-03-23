@@ -23,4 +23,33 @@
     <string name="apex">Apex Legends</string>
     <string name="battleRoyale">Battle Royale</string>
     <string name="descApex">Apex Legends is a free-to-play hero battle royale game developed by Respawn Entertainment and published by Electronic Arts. It was released for Microsoft Windows, PlayStation 4, and Xbox One in February 2019, and for Nintendo Switch in March 2021. The game supports cross-platform play. The game is set in the same science fiction universe as Respawn Entertainment\'s Titanfall series. A mobile version of the game specially designed for touchscreens titled Apex Legends Mobile has also been announced which is scheduled to be fully released by 2022 on Android and iOS.</string>
+
+    <string name="nameJG">JGabrielJ</string>
+    <string name="nameHades">Hades675L</string>
+    <string name="nameHumano">ImaSigmaMan</string>
+    <string name="nameHumana">TheDuvidosa</string>
+
+    <string name="firstMsg">Boa tarde, professor! Teremos aula hoje?</string>
+    <string name="firstDate">14/02/23, 13:45h</string>
+
+    <string name="genericMsg">Chegou cedo, né?</string>
+    <string name="genericDate">14/02/23, 14:15h</string>
+
+    <string name="lastJG">Olá, ser humano! Estás livre para jogar?</string>
+
+    <string name="lastHades">Ei, mofi! Já consertou muito erro hoje?</string>
+
+    <string name="lastHumano">I am a Sigma Man 😎</string>
+
+    <string name="lastHumana">Titcher, mim helpa aq, pf!!!</string>
+
+
+    <string name="dateJG">22/03/23, 19:00h</string>
+
+    <string name="dateHades">18/03/23, 17:00h</string>
+
+    <string name="dateHumano">25/03/23, 23:59h</string>
+
+    <string name="dateHumana">21/03/23, 16:00h</string>
+
 </resources>

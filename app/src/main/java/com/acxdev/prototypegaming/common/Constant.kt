@@ -1,8 +1,9 @@
 package com.acxdev.prototypegaming.common
 
 import com.acxdev.prototypegaming.R
-import com.acxdev.prototypegaming.model.Game
-import com.acxdev.prototypegaming.model.Spec
+import com.acxdev.prototypegaming.adapter.ItemMessage
+import com.acxdev.prototypegaming.adapter.RowMessage
+import com.acxdev.prototypegaming.model.*
 
 class Constant {
     companion object{
@@ -67,8 +68,45 @@ class Constant {
             val spec = mutableListOf<Spec>()
             spec.add(Spec("Minimum Specs","30fps","Intel i3-370M","RAM 4GB","Intel HD 4000"))
             spec.add(Spec("Rec, Specs","60fps","Core i5-4150","RAM 4GB","GeForce GT 730"))
-            spec.add(Spec("Ultra Specs","144fps+","Core i5-4460","RAM 4GB","NVIDIA GTX 1050 Ti"))
-            return  spec
+            spec.add(Spec("Ultra Specs","144fps+","Core i5-4460","RAM 8GB","NVIDIA GTX 1050 Ti"))
+            return spec
+        }
+
+        fun itemMessage(): MutableList<Friendships> {
+            val itemMsg = mutableListOf<Friendships>()
+            itemMsg.add(Friendships(R.drawable.ic_mario, R.string.nameJG, R.string.lastJG,R.string.dateJG, 0))
+            itemMsg.add(Friendships(R.drawable.ic_usopp, R.string.nameHades, R.string.lastHades,R.string.dateHades, 1))
+            itemMsg.add(Friendships(R.drawable.ic_sigma, R.string.nameHumano, R.string.lastHumano,R.string.dateHumano, 2))
+            itemMsg.add(Friendships(R.drawable.ic_amogus, R.string.nameHumana, R.string.lastHumana,R.string.dateHumana, 3))
+            return itemMsg
+        }
+
+        fun rowMessage(profile: Profile): MutableList<ChatMessage> {
+            val msg = mutableListOf<ChatMessage>()
+            when (profile) {
+                Profile.PROFILE_JG -> {
+                    msg.add(ChatMessage(R.drawable.ic_mario, R.string.nameJG, R.string.firstMsg, R.string.firstDate))
+                    msg.add(ChatMessage(R.drawable.ic_mario, R.string.nameJG, R.string.genericMsg, R.string.genericDate))
+                    msg.add(ChatMessage(R.drawable.ic_mario, R.string.nameJG, R.string.lastJG, R.string.dateJG))
+                }
+                Profile.PROFILE_HADES -> {
+                    msg.add(ChatMessage(R.drawable.ic_usopp, R.string.nameHades, R.string.firstMsg, R.string.firstDate))
+                    msg.add(ChatMessage(R.drawable.ic_usopp, R.string.nameHades, R.string.genericMsg, R.string.genericDate))
+                    msg.add(ChatMessage(R.drawable.ic_usopp, R.string.nameHades, R.string.lastHades,R.string.dateHades))
+                }
+                Profile.PROFILE_SIGMA -> {
+                    msg.add(ChatMessage(R.drawable.ic_sigma, R.string.nameHumano, R.string.firstMsg, R.string.firstDate))
+                    msg.add(ChatMessage(R.drawable.ic_sigma, R.string.nameHumano, R.string.genericMsg, R.string.genericDate))
+                    msg.add(ChatMessage(R.drawable.ic_sigma, R.string.nameHumano, R.string.lastHumano,R.string.dateHumano))
+                }
+                Profile.PROFILE_DUVIDOSA -> {
+                    msg.add(ChatMessage(R.drawable.ic_amogus, R.string.nameHumana, R.string.firstMsg, R.string.firstDate))
+                    msg.add(ChatMessage(R.drawable.ic_amogus, R.string.nameHumana, R.string.genericMsg, R.string.genericDate))
+                    msg.add(ChatMessage(R.drawable.ic_amogus, R.string.nameHumana, R.string.lastHumana,R.string.dateHumana))
+                }
+                else -> {}
+            }
+            return msg
         }
     }
 }

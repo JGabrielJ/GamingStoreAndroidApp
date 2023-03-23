@@ -10,12 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrototypeGaming">
         <activity
-            android:name=".ActivityChat"
-            android:exported="false" />
-        <activity
             android:name=".ui.activity.ActivityDetail"
             android:configChanges="keyboardHidden|orientation|screenSize|density|uiMode"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ActivityChat"
+            android:exported="false" />
         <activity
             android:name=".ui.activity.ActivityOnBoarding"
             android:configChanges="keyboardHidden|orientation|screenSize|density|uiMode"

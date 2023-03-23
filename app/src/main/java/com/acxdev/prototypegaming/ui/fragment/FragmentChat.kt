@@ -5,7 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.acxdev.commonFunction.util.view.RecyclerViewX.Companion.adapter
 import com.acxdev.prototypegaming.R
+import com.acxdev.prototypegaming.adapter.ItemMessage
+import com.acxdev.prototypegaming.adapter.RowHeader
+import com.acxdev.prototypegaming.common.Constant
 import com.acxdev.prototypegaming.databinding.FragmentChatBinding
 
 class FragmentChat : Fragment() {
@@ -18,5 +22,6 @@ class FragmentChat : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.messages.adapter(ItemMessage(Constant.itemMessage()), 1)
     }
 }
